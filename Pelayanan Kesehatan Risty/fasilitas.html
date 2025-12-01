@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fasilitas - Klinik Sehat Ceria</title>
+    <style>
+       
+        :root {
+            --soft-blue: #64B5F6;
+            --soft-pink: #F48FB1;
+            --light-bg: #E3F2FD; 
+            --text-dark: #212121; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+      
+        header {
+            background-color: var(--soft-blue);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active-fasilitas { 
+            background-color: var(--soft-pink);
+        }
+
+       
+        .fasilitas-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .fasilitas-container h1 {
+            color: var(--soft-blue);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .fasilitas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+
+        .fasilitas-card {
+            background-color: var(--light-bg);
+            padding: 20px;
+            border-radius: 8px;
+            border-left: 5px solid var(--soft-pink);
+        }
+
+        .fasilitas-card h3 {
+            color: var(--text-dark);
+            margin-top: 0;
+            font-size: 1.2em;
+        }
+        
+       
+        footer {
+            background-color: var(--soft-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Klinik Sehat Ceria</div>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="dokter.html">Dokter</a>
+                <a href="jadwal.html">Jadwal</a>
+                <a href="fasilitas.html" class="active-fasilitas">Fasilitas</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="fasilitas-container">
+            <h1>Fasilitas Penunjang Terbaik</h1>
+            <p style="text-align: center; margin-bottom: 40px; color: #555;">Kenyamanan dan kelengkapan alat adalah prioritas kami.</p>
+
+            <div class="fasilitas-grid">
+                <div class="fasilitas-card">
+                    <h3>Ruang Tunggu Nyaman</h3>
+                    <p>Dilengkapi AC, sofa empuk, dan koneksi Wi-Fi gratis.</p>
+                </div>
+                <div class="fasilitas-card">
+                    <h3>Laboratorium Mini</h3>
+                    <p>Peralatan sederhana untuk tes darah, gula, dan urin dasar.</p>
+                </div>
+                <div class="fasilitas-card">
+                    <h3>Peralatan Modern</h3>
+                    <p>Semua peralatan medis dan gigi terawat dan steril sesuai standar.</p>
+                </div>
+                <div class="fasilitas-card">
+                    <h3>Area Bermain Anak</h3>
+                    <p>Disediakan tempat khusus agar anak tidak bosan saat menunggu.</p>
+                </div>
+                <div class="fasilitas-card">
+                    <h3>Akses Ramah Difabel</h3>
+                    <p>Akses mudah untuk kursi roda dan lansia.</p>
+                </div>
+                <div class="fasilitas-card">
+                    <h3>Farmasi Terintegrasi</h3>
+                    <p>Tersedia obat-obatan yang diresepkan oleh dokter kami.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Klinik Sehat Ceria. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>

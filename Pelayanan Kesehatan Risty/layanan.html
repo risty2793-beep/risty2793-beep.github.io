@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layanan - Klinik Sehat Ceria</title>
+    <style>
+       
+        :root {
+            --soft-blue: #64B5F6; 
+            --soft-pink: #F48FB1; 
+            --light-bg: #E3F2FD; 
+            --text-dark: #212121; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+       
+        header {
+            background-color: var(--soft-blue);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active-layanan { 
+            background-color: var(--soft-pink);
+        }
+
+        
+        .layanan-container {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+        }
+
+        .layanan-container h1 {
+            color: var(--soft-blue);
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .layanan-item {
+            border: 1px solid #ddd;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .layanan-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+        }
+
+        .layanan-item h2 {
+            color: var(--soft-pink);
+            margin-top: 0;
+            border-bottom: 2px dashed var(--soft-blue);
+            padding-bottom: 10px;
+        }
+
+       
+        footer {
+            background-color: var(--soft-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Klinik Sehat Ceria</div>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html" class="active-layanan">Layanan</a>
+                <a href="dokter.html">Dokter</a>
+                <a href="jadwal.html">Jadwal</a>
+                <a href="fasilitas.html">Fasilitas</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="layanan-container">
+            <h1>Layanan Kesehatan Kami</h1>
+
+            <div class="layanan-item">
+                <h2>Poli Umum</h2>
+                <p>Pemeriksaan kesehatan dasar, pengobatan penyakit ringan, dan konsultasi kesehatan sehari-hari.</p>
+            </div>
+
+            <div class="layanan-item">
+                <h2>Poli Gigi</h2>
+                <p>Perawatan dan konsultasi kesehatan gigi dan mulut, pencabutan, pembersihan karang gigi, dan penambalan.</p>
+            </div>
+
+            <div class="layanan-item">
+                <h2>Poli Anak</h2>
+                <p>Pemeriksaan rutin bayi dan balita, imunisasi lengkap, serta penanganan masalah kesehatan anak.</p>
+            </div>
+
+            <div class="layanan-item">
+                <h2>Laboratorium Sederhana</h2>
+                <p>Pemeriksaan darah, gula, kolesterol, dan tes cepat lainnya untuk mendukung diagnosis.</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Klinik Sehat Ceria. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
