@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dokter Kami - Klinik Sehat Ceria</title>
+    <style>
+       
+        :root {
+            --soft-blue: #64B5F6;
+            --soft-pink: #F48FB1; 
+            --light-bg: #E3F2FD; 
+            --text-dark: #212121; 
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-bg);
+            color: var(--text-dark);
+            line-height: 1.6;
+        }
+
+        
+        header {
+            background-color: var(--soft-blue);
+            color: white;
+            padding: 15px 0;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        .logo {
+            font-size: 1.8em;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+            font-size: 1em;
+            padding: 5px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        .nav-links a:hover,
+        .nav-links a.active-dokter { 
+            background-color: var(--soft-pink);
+        }
+
+
+        .dokter-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .dokter-container h1 {
+            color: var(--soft-blue);
+            margin-bottom: 30px;
+        }
+
+        .dokter-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .dokter-card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 250px;
+            transition: transform 0.3s;
+            border-bottom: 5px solid var(--soft-pink);
+        }
+
+        .dokter-card:hover {
+            transform: translateY(-8px);
+        }
+
+        .dokter-card img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 4px solid var(--soft-blue);
+        }
+
+        .dokter-card h2 {
+            color: var(--text-dark);
+            font-size: 1.3em;
+            margin-bottom: 5px;
+        }
+
+        .dokter-card p {
+            color: var(--soft-pink);
+            font-weight: bold;
+        }
+
+        
+        footer {
+            background-color: var(--soft-blue);
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            margin-top: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Klinik Sehat Ceria</div>
+            <div class="nav-links">
+                <a href="index.html">Beranda</a>
+                <a href="layanan.html">Layanan</a>
+                <a href="dokter.html" class="active-dokter">Dokter</a>
+                <a href="jadwal.html">Jadwal</a>
+                <a href="fasilitas.html">Fasilitas</a>
+                <a href="kontak.html">Kontak</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="dokter-container">
+            <h1>Tim Dokter Profesional Kami</h1>
+            <div class="dokter-list">
+                
+                <div class="dokter-card">
+                    <img src="https://placehold.co/150x150/64B5F6/FFFFFF?text=Dr.+Ririn" alt="Dr. Ririn">
+                    <h2>Dr. Ririn</h2>
+                    <p>Dokter Umum & Keluarga</p>
+                    <p>Pengalaman 10 tahun.</p>
+                </div>
+                <div class="dokter-card">
+                    <img src="https://placehold.co/150x150/F48FB1/FFFFFF?text=Dr.+Athifah Mahulauw" alt="Dr. Athifah Mahulauw">
+                    <h2>Drg. Athifah Mahulauw</h2>
+                    <p>Dokter Gigi Spesialis</p>
+                    <p>Fokus pada ortodonti.</p>
+                </div>
+                <div class="dokter-card">
+                    <img src="https://placehold.co/150x150/64B5F6/FFFFFF?text=Dr.+Caca Maricar" alt="Dr. Caca Maricar">
+                    <h2>Dr. Caca Maricar, Sp.A</h2>
+                    <p>Dokter Spesialis Anak</p>
+                    <p>Ahli tumbuh kembang anak.</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Klinik Sehat Ceria. Semua Hak Dilindungi.</p>
+    </footer>
+</body>
+</html>
